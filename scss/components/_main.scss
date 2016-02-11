@@ -57,6 +57,10 @@ header {
       padding: .5em 1em;
       border-bottom: 1px solid $yellow;
       text-decoration: none;
+
+        &:hover {
+        font-weight: 900;
+      }
     }
   }
 }
