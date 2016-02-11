@@ -19,7 +19,7 @@ html {
 
 
 body{
-  font-family: sans-serif;
+  font-family: $font;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
@@ -29,7 +29,8 @@ body{
 }
 
 header {
-  font-family: $title;
+  font-family: $font;
+  color: $yellow;
   padding: 0 1em;
   position: relative;
 }
@@ -47,14 +48,14 @@ header {
     li {
       list-style-type: none;
       &:first-child a {
-        border-top: 1px solid $light-grey;
+        border-top: 1px solid $yellow;
     }
     a {
       display: block;
-      color: black;
+      color: $light-grey;
       text-align: center;
       padding: .5em 1em;
-      border-bottom: 1px solid $light-grey;
+      border-bottom: 1px solid $yellow;
       text-decoration: none;
     }
   }
@@ -62,7 +63,7 @@ header {
 
 .toggle-btn ,
 .close-btn {
-  color: $text-color;
+  color: $yellow;
   text-decoration: none;
   height: 40px;
   width: 40px;
